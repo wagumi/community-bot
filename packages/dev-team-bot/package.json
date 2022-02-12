@@ -1,0 +1,10 @@
+{
+  "name": "dev-team-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Wagumi DAO Dev Team",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  }
+}
