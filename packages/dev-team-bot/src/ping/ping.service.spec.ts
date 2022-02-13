@@ -18,5 +18,5 @@ describe('PingService', () => {
 
   it('should return "pong"', () => {
     expect(service.getPing()).toBe('pong');
-  })
+  });
 });

@@ -16,7 +16,9 @@ describe('AppController', () => {
 
   describe('root', () => {
     it('should return "Hello, this is 和組 community bot"', () => {
-      expect(appController.getHello()).toBe('Hello, this is 和組 community bot');
+      expect(appController.getHello()).toBe(
+        'Hello, this is 和組 community bot',
+      );
     });
   });
 });
