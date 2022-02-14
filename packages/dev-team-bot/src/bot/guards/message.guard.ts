@@ -14,6 +14,7 @@ export class MessageGuard implements DiscordGuard {
     this.allowdList = configService.get('devAllowedChannelList');
   }
   canActive(event: 'messageCreate', [message]: [Message]): boolean {
+    if (message.author.bot) return false;
     if (this.guildId !== message.guildId) {
       this.logger.log(`Not Wagumi Server -  guildId: ${message.guildId}`);
       return false;
@@ -24,7 +25,6 @@ export class MessageGuard implements DiscordGuard {
       );
       return false;
     }
-
-    return !message.author.bot;
+    return true;
   }
 }

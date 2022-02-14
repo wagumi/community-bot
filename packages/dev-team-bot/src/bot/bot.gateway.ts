@@ -17,7 +17,7 @@ export class BotGateway {
   async onMessage(message: Message): Promise<void> {
     if (message.content === '!ping') {
       await message.channel.sendTyping();
-      message.channel.send('Pong.');
+      message.channel.send('pong.');
     }
   }
 }
