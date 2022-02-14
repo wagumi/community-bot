@@ -21,9 +21,12 @@
     "deploy": "yarn run prebuild && yarn run build && yarn run start:prod"
   },
   "dependencies": {
+    "@discord-nestjs/core": "^2.1.13",
     "@nestjs/common": "^8.0.0",
+    "@nestjs/config": "^1.1.7",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
+    "discord.js": "^13.6.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0"
