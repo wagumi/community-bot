@@ -6,7 +6,7 @@
     "declarationMap": true,
     "esModuleInterop": true,
     "emitDecoratorMetadata": false,
-    "experimentalDecorators": true,
+    "experimentalDecorators": false,
     "module": "commonjs",
     "outDir": "./dist",
     "resolveJsonModule": true,
