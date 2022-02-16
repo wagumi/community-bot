@@ -8,7 +8,7 @@
   "scripts": {
     "prepare": "husky install",
     "lint": "yarn run eslint",
-    "deploy:dev-team-bot": "cd packages/dev-team-bot && npm run deploy"
+    "start:dev-team-bot": "cd packages/dev-team-bot && npm start"
   },
   "workspaces": {
     "packages": [
