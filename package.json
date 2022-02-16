@@ -7,8 +7,7 @@
   "license": "MIT",
   "scripts": {
     "prepare": "husky install",
-    "lint": "yarn run eslint",
-    "start:dev-team-bot": "cd packages/dev-team-bot && npm start:prod"
+    "lint": "yarn run eslint"
   },
   "workspaces": {
     "packages": [
