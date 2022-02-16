@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "ES2017",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
