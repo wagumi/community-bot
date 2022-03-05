@@ -5,14 +5,14 @@ on:
       - main
       - development
     paths:
-      - 'packages/**'
+      - 'packages/dev-team-bot/**'
       - '.github/workflows/test.yml'
   pull_request:
     branches:
       - main
       - development
     paths:
-      - 'packages/**'
+      - 'packages/dev-team-bot/**'
       - '.github/workflows/test.yml'
 
 jobs:
@@ -21,6 +21,9 @@ jobs:
     strategy:
       matrix:
         node-version: [16.13.2]
+    defaults:
+      run:
+        working-directory: ./packages/dev-team-bot
 
     steps:
       - name: Copy repository
