@@ -18,6 +18,9 @@ export class BotService {
   }
 
   printDebugInfo(message: string): string {
+    if (this.isProd()) {
+      return message;
+    }
     const info = this.getDebugInfo();
     let logMsg = 'ENV: ' + info.env;
     if (info.branch) {

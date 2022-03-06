@@ -21,9 +21,7 @@ export class BotGateway {
   async onMessage(message: Message): Promise<void> {
     if (message.content === '!ping') {
       await message.channel.sendTyping();
-      const replyMessage = this.botService.isProd()
-        ? this.PING_MESSAGE
-        : this.botService.printDebugInfo(this.PING_MESSAGE);
+      const replyMessage = this.botService.printDebugInfo(this.PING_MESSAGE);
       message.channel.send(replyMessage);
     }
   }
