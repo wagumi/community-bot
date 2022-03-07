@@ -14,6 +14,7 @@
 - [NestJS](https://nestjs.com/)
 - [Discord.JS](https://discord.js.org/)
 - [Railway](https://railway.app/)
+- [yarn workspace](https://yarnpkg.com/features/workspaces)
 
 ## リポジトリ構成について
 

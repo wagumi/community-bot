@@ -13,6 +13,7 @@ Team Dev Bot では下記の技術が利用されています。
 - [NestJS](https://nestjs.com/)
 - [Discord.JS](https://discord.js.org/)
 - [Railway](https://railway.app/) （NodeJS Version: 16.13.2）
+- [yarn workspace](https://yarnpkg.com/features/workspaces)
 
 ## パッケージのインストール
 
