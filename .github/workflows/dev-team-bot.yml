@@ -21,6 +21,9 @@ jobs:
     strategy:
       matrix:
         node-version: [16.13.2]
+    env:
+      DISCORD_GUILD_ID: '111222333444555666'
+      DISCORD_DEV_CHANNEL_ALLOWED_LIST: '222333444555666777,333444555666777888'
     defaults:
       run:
         working-directory: ./packages/dev-team-bot
