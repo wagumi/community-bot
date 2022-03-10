@@ -3,7 +3,9 @@ import { DiscordModule } from '@discord-nestjs/core';
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { Intents } from 'discord.js';
-import botConfig from './config/botConfig';
+import botConfig from '../config/botConfig';
+import commonConfig from '../config/commonConfig';
+import { BotService } from './bot.service';
 
 @Module({
   imports: [
@@ -18,9 +20,9 @@ import botConfig from './config/botConfig';
       inject: [ConfigService],
     }),
     ConfigModule.forRoot({
-      load: [botConfig],
+      load: [botConfig, commonConfig],
     }),
   ],
-  providers: [BotGateway],
+  providers: [BotGateway, BotService],
 })
 export class BotModule {}
